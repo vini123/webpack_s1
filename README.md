@@ -25,9 +25,9 @@
 
 # 项目运行截图
 
-![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173345.png)
+![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173345.png?r=1)
 
-![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173450.png)
+![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173450.png?r=1)
 
 # 代码使用
 
@@ -44,3 +44,9 @@ npm install
 // 运行打包
 npm test
 ```
+
+# 额外
+
+less打包参考： [https://segmentfault.com/a/1190000008812504](https://segmentfault.com/a/1190000008812504)
+
+ui框架： [http://www.iviewui.com/](http://www.iviewui.com/)
