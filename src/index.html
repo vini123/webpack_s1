@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>i want study webpack</title>
+	<link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+</head>
+<body>
+	<div id="app">
+		<div class="container-fluid header">
+			<div class="container">
+				<div class="nav">
+					<ul>
+						<li v-for="item in navdata">
+							<a :href="item.href" 
+							   v-text="item.text"
+							   :class="{active:item.active}">
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="reg-login">
+					<a>注册</a>
+					<a>登录</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="top">
+		    <carousel v-model="value1" 
+		              :autoplay="true"
+                      :autoplay-speed="3000"
+                      :style="{height:carouselHeight}">
+		        <carousel-item>
+		            <div :style="{height:carouselHeight}" class="carousel-i carousel-1"></div>
+		        </carousel-item>
+		        <carousel-item>
+		            <div :style="{height:carouselHeight}" class="carousel-i carousel-2"></div>
+		        </carousel-item>
+		        <carousel-item>
+		            <div :style="{height:carouselHeight}" class="carousel-i carousel-3"></div>
+		        </carousel-item>
+		        <carousel-item>
+		            <div :style="{height:carouselHeight}" class="carousel-i carousel-4"></div>
+		        </carousel-item>
+		    </carousel>
+		</div>
+	</div>
+	
+	<script src="//unpkg.com/vue/dist/vue.js"></script>
+	<script src="//unpkg.com/iview/dist/iview.min.js"></script>
+	<script src="//unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
