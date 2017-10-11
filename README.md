@@ -23,8 +23,24 @@
 
 更多详细信息，留意上一节：[https://github.com/vini123/webpackstudy](https://github.com/vini123/webpackstudy)
 
-### 项目运行截图
+# 项目运行截图
 
 ![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173345.png)
 
 ![image](https://blog.vini123.com/wp-content/uploads/2017/10/20171011173450.png)
+
+# 代码使用
+
+```
+//将项目下载到本地
+git clone xxx
+
+// 进入终端，进入到项目目录中
+cd webpack_s1
+
+// 对依赖进行安装
+npm install
+
+// 运行打包
+npm test
+```
