@@ -49,4 +49,6 @@ npm test
 
 less打包参考： [https://segmentfault.com/a/1190000008812504](https://segmentfault.com/a/1190000008812504)
 
+less快如入门： [http://lesscss.cn/](http://lesscss.cn/)
+
 ui框架： [http://www.iviewui.com/](http://www.iviewui.com/)
