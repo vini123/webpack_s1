@@ -25,3 +25,11 @@ function resizeWH ()
         common.carouselHeight = (window.innerHeight - 62) + 'px'
 }
 
+
+let [x, y, z] = [10, 20, 30];
+
+
+let say = (value) => console.log(value);
+
+say('i want study webpack');
+
