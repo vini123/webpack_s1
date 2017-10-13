@@ -156,8 +156,11 @@ cd webpack_s1
 // 对依赖进行安装
 npm install
 
-// 运行打包
+// 运行打包，使用的配置文件是 webpack.config.js
 npm test
+
+// 运行打包2，使用的配置文件是 webpack.dev.config.js
+npm run dev 
 ```
 
 # 额外
