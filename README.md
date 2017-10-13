@@ -1,5 +1,9 @@
 # webpack study 学习第一季
 
+
+---
+date: 2017-10-11
+
 # 主要功能点
 
 ### 从配置看
@@ -14,6 +18,8 @@
 1. css-loader。
 2. style-loader。
 3. less-loader。
+4. babel-loader。
+5. postcss-loader。
 
 ### 从插件看
 
