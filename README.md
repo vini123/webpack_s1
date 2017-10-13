@@ -1,5 +1,32 @@
 # webpack study 学习第一季
 
+# 主要功能点
+
+### 从配置看
+
+1. entry， 入口。
+2. output，输出。
+3. module， loader等。
+4. plugins，插件。
+
+### 从loader看
+
+1. css-loader。
+2. style-loader。
+3. less-loader。
+4. babel-loader。
+5. postcss-loader。
+
+### 从插件看
+
+1. html-webpack-plugin。
+2. clean-webpack-plugin。
+3. extract-text-webpack-plugin。
+4. BannerPlugin。
+5. UglifyJsPlugin。
+
+更多详细信息，留意上一节：[https://github.com/vini123/webpackstudy](https://github.com/vini123/webpackstudy)
+
 # ~~2017-10-13~~
 
 新增两个loader和两个插件。
@@ -54,35 +81,62 @@ npm install --save-dev react react-dom
 
 # postcss
 
+postcss也是一个处理css的平台，用来为CSS代码自动添加适应不同浏览器的CSS前缀。
 
+安装。
 
+```
+npm install --save-dev postcss-loader autoprefixer
+```
+
+postcss配置。
+{
+ test:/\.(css|less)$/,
+ use:[
+   {loader:'css-loader'}, 
+   {loader:'style-loader'}, 
+   {loader:'postcss-loader'}
+   ]
+}
+
+和babel一样，postcss也有一个独立的配置文件，默认为根目录下的 **postcss.config.js**
+
+```
+// postcss.config.js
+module.exports = {
+    plugins: [
+        require('autoprefixer')
+    ]
+}
+```
+
+# BannerPlugin 插件
+
+在js的首行加入注释说明。如版权说明等。
+
+在 plugins中添加插件。
+```
+plugins:[
+  ……
+  new webpack.BannerPlugin('欢迎翻版，翻版必究')
+]
+```
+
+# UglifyJsPlugin 插件
+
+压缩js代码。
+
+在 plugins 中添加插件。
+
+```
+plugins:[
+  ……
+  new webpack.optimize.UglifyJsPlugin()
+]
+```
+其实有更多的插件，有更多的loader。表示这里忙不过来。
 
 # ~~2017-10-11~~
-
-# 主要功能点
-
-### 从配置看
-
-1. entry， 入口。
-2. output，输出。
-3. module， loader等。
-4. plugins，插件。
-
-### 从loader看
-
-1. css-loader。
-2. style-loader。
-3. less-loader。
-4. babel-loader。
-5. postcss-loader。
-
-### 从插件看
-
-1. html-webpack-plugin。
-2. clean-webpack-plugin。
-3. extract-text-webpack-plugin。
-
-更多详细信息，留意上一节：[https://github.com/vini123/webpackstudy](https://github.com/vini123/webpackstudy)
 
 # 项目运行截图
 
