@@ -25,7 +25,7 @@
 4. BannerPlugin。
 5. UglifyJsPlugin。
 
-更多详细信息，留意上一节：[https://github.com/vini123/webpackstudy](https://github.com/vini123/webpackstudy)
+更多详细信息，留意上一节：[https://github.com/vini123/webpack_s0](https://github.com/vini123/webpack_s0)
 
 # ~~2017-10-13~~
 
